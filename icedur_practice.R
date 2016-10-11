@@ -21,6 +21,8 @@ plot(ice.dur$year4, ice.dur$ice_duration)
 # someone make edits on the newer plotting
 # someone delete this comment
 
+#LL committing to code?
+
 
 
 
