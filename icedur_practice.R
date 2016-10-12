@@ -20,9 +20,10 @@ head(ice.dur)
 
 plot(ice.dur$year4, ice.dur$ice_duration)
 
+modelfit<-lm(ice.dur$ice_duration~ice.dur$year4)
+summary(modelfit)
 
 # someone add a trendline
-# someone calculate a model fit
 # someone make the plot prettier
 # someone write an autumn-themed haiku
 # someone give an example of how to plot an example of these data in ggplot
@@ -36,5 +37,6 @@ plot(ice.dur$year4, ice.dur$ice_duration)
 
 
 # Successful pull, edit, committ, push back to Github -LCL 2016-10-12
+# Successful pull, edit, commit, push back to Github - JAH 2016-10-12
 
 # fix or delete one of the lines of code below
