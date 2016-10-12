@@ -11,6 +11,8 @@ save.image("~/stanleylab-practicerepo/ice.dur.RData") # VLB
 
 ############ Run below ###############
 
+load("ice.dur.RData") # Load ice duration data -LL
+
 str(ice.dur)
 summary(ice.dur)
 head(ice.dur)
