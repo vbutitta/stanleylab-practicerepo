@@ -29,11 +29,10 @@ plot(ice.dur$year4, ice.dur$ice_duration)
 # someone make edits on the newer plotting
 # someone delete this comment
 
-#LL committing to code?
-#More Comments 2
 
 
 
 
+# Successful pull, edit, committ, push back to Github -LCL
 
 # fix or delete one of the lines of code below
