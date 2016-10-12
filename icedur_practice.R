@@ -11,6 +11,8 @@ save.image("~/stanleylab-practicerepo/ice.dur.RData") # VLB
 
 ############ Run below ###############
 
+load("ice.dur.RData") # Load ice duration data -LL
+
 str(ice.dur)
 summary(ice.dur)
 head(ice.dur)
@@ -33,6 +35,6 @@ plot(ice.dur$year4, ice.dur$ice_duration)
 
 
 
-# Successful pull, edit, committ, push back to Github -LCL
+# Successful pull, edit, committ, push back to Github -LCL 2016-10-12
 
 # fix or delete one of the lines of code below
