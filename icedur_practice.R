@@ -4,9 +4,17 @@
 # Directions: Each person should add one of the suggested lines of code to this script, next week we will look at how all these different edits from different people are handled by git
 
 ####################################################
-
+# don't run #
 ice.dur <- read.csv("C:/Users/Vincent/Downloads/north_temperate_lakes_lter__ice_duration_-_madison_lakes_area.csv") # VLB
 save.image("~/stanleylab-practicerepo/ice.dur.RData") # VLB
+#############
+
+############ Run below ###############
+
+str(ice.dur)
+summary(ice.dur)
+head(ice.dur)
+
 
 plot(ice.dur$year4, ice.dur$ice_duration)
 
