@@ -40,5 +40,6 @@ summary(modelfit)
 # Successful pull, edit, commit, push back to Github - JAH 2016-10-12
 # Successful pull, edit, commit, push back to Github - SMC 2016-10-13
 #and another to make sure my password still works (SMC)
+#and making sure this works on my desktop! (SMC)
 
 # fix or delete one of the lines of code below
