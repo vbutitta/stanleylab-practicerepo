@@ -18,7 +18,7 @@ summary(ice.dur)
 head(ice.dur)
 
 
-plot(ice.dur$year4, ice.dur$ice_duration)
+plot(ice.dur$year4, ice.dur$ice_duration, xlab= "Year", ylab="Ice Duration")
 
 modelfit<-lm(ice.dur$ice_duration~ice.dur$year4)
 summary(modelfit)
@@ -38,5 +38,6 @@ summary(modelfit)
 
 # Successful pull, edit, committ, push back to Github -LCL 2016-10-12
 # Successful pull, edit, commit, push back to Github - JAH 2016-10-12
+# Successful pull, edit, commit, push back to Github - SMC 2016-10-13
 
 # fix or delete one of the lines of code below
