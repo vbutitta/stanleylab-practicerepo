@@ -24,7 +24,15 @@ plot(ice.dur$year4, ice.dur$ice_duration, xlab= "Year", ylab="Ice Duration")
 modelfit<-lm(ice.dur$ice_duration~ice.dur$year4)
 summary(modelfit)
 
+# calculate a 3 year moving average and plot line to figure as a smoother
+
+mov.avg = rollapply(ice.dur$ice_duration, width = 3, by = 3, mean, align = "center", partial = TRUE)
+mov.avg = data.frame(mov_avg = mov.avg, year4 = seq(from = 1853,to =2015, by = 3))
+points(mov.avg$mov_avg ~ mov.avg$year4, type = "l", add = TRUE, col = "red", lwd = 2)
+
 # someone add a trendline
+abline(modelfit)
+
 # someone make the plot prettier
 # someone write an autumn-themed haiku
 # someone give an example of how to plot an example of these data in ggplot
