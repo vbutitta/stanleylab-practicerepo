@@ -20,6 +20,7 @@ head(ice.dur)
 
 plot(ice.dur$year4, ice.dur$ice_duration, xlab= "Year", ylab="Ice Duration")
 
+
 modelfit<-lm(ice.dur$ice_duration~ice.dur$year4)
 summary(modelfit)
 
@@ -30,7 +31,6 @@ summary(modelfit)
 # someone work on a different project in R (freebie) (comment it in here so we don't all take this one!)
 # someone subset these data to omit all NAs for ice_duration
 # someone make edits on the newer plotting
-# someone delete this comment
 
 
 
@@ -39,6 +39,8 @@ summary(modelfit)
 # Successful pull, edit, committ, push back to Github -LCL 2016-10-12
 # Successful pull, edit, commit, push back to Github - JAH 2016-10-12
 # Successful pull, edit, commit, push back to Github - SMC 2016-10-13
+# Successful pull, edit, commit, push back to Github - PJS 2016-10-17
+
 #and another to make sure my password still works (SMC)
 #and making sure this works on my desktop! (SMC)
 
