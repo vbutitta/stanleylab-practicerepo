@@ -6,5 +6,5 @@
 #### If you get an error message when you try to push changes to this repository in RStudio, try
 RStudio -> Tools -> Shell
 #### And in the Shell, type command
-'git push -u origin master'
+`git push -u origin master`
 #### This will likely prompt you to enter username and password
