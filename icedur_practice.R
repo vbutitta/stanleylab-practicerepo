@@ -11,6 +11,9 @@ save.image("~/stanleylab-practicerepo/ice.dur.RData") # VLB
 
 ############ Run below ###############
 
+#attach packages
+library(zoo) #rollapply
+
 load("ice.dur.RData") # Load ice duration data -LcL 2016-10-12
 
 str(ice.dur)
@@ -20,18 +23,17 @@ head(ice.dur)
 
 plot(ice.dur$year4, ice.dur$ice_duration, xlab= "Year", ylab="Ice Duration")
 
-
+# Least squares model and trendline 
 modelfit<-lm(ice.dur$ice_duration~ice.dur$year4)
 summary(modelfit)
+abline(modelfit)
 
 # calculate a 3 year moving average and plot line to figure as a smoother
-
 mov.avg = rollapply(ice.dur$ice_duration, width = 3, by = 3, mean, align = "center", partial = TRUE)
 mov.avg = data.frame(mov_avg = mov.avg, year4 = seq(from = 1853,to =2015, by = 3))
 points(mov.avg$mov_avg ~ mov.avg$year4, type = "l", add = TRUE, col = "red", lwd = 2)
 
-# someone add a trendline
-abline(modelfit)
+
 
 # someone make the plot prettier
 # someone write an autumn-themed haiku
@@ -43,9 +45,7 @@ abline(modelfit)
 
 
 
-
-
-# Successful pull, edit, committ, push back to Github -LCL 2016-10-12
+# Successful pull, edit, commit, push back to Github - LCL 2016-10-12
 # Successful pull, edit, commit, push back to Github - JAH 2016-10-12
 # Successful pull, edit, commit, push back to Github - SMC 2016-10-13
 # Successful pull, edit, commit, push back to Github - PJS 2016-10-17
