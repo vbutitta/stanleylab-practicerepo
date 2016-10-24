@@ -49,6 +49,8 @@ ice.plot + geom_line(data=mov.avg, aes(x=year4, y=mov_avg), size=2) # adds 3-yr 
 # someone give an example of how to plot an example of these data in ggplot
 # someone work on a different project in R (freebie) (comment it in here so we don't all take this one!)
 # someone subset these data to omit all NAs for ice_duration
+na.omit (ice.dur$ice_duration)
+
 # someone make edits on the newer plotting
 
 
@@ -58,6 +60,7 @@ ice.plot + geom_line(data=mov.avg, aes(x=year4, y=mov_avg), size=2) # adds 3-yr 
 # Successful pull, edit, commit, push back to Github - JAH 2016-10-12
 # Successful pull, edit, commit, push back to Github - SMC 2016-10-13
 # Successful pull, edit, commit, push back to Github - PJS 2016-10-17
+# Successful pull, edit, commit, push back to Github - EAR 2016-10-23
 
 #and another to make sure my password still works (SMC)
 #and making sure this works on my desktop! (SMC)
