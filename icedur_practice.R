@@ -36,6 +36,15 @@ points(mov.avg$mov_avg ~ mov.avg$year4, type = "l", add = TRUE, col = "red", lwd
 
 
 # someone make the plot prettier
+# prettier plot by jrc
+library(ggplot2)
+ice.plot <- ggplot(ice.dur, aes(x=year4, y=ice_duration)) +
+  geom_point(size=2, alpha=0.5) +
+  theme_classic(14) +
+  ylab("Ice Duration (days)") + xlab("Year") +
+  stat_smooth(method="lm", se=FALSE, color="blue", size=2)  # linear model
+ice.plot + geom_line(data=mov.avg, aes(x=year4, y=mov_avg), size=2) # adds 3-yr moving avg
+
 # someone write an autumn-themed haiku
 # someone give an example of how to plot an example of these data in ggplot
 # someone work on a different project in R (freebie) (comment it in here so we don't all take this one!)
