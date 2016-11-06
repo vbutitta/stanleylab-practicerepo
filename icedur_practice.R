@@ -52,7 +52,14 @@ ice.plot + geom_line(data=mov.avg, aes(x=year4, y=mov_avg), size=2) # adds 3-yr 
 na.omit (ice.dur$ice_duration)
 
 # someone make edits on the newer plotting
-
+# AKO new edit on plotting # 
+library(ggplot2)
+ice.plot <- ggplot(ice.dur, aes(x=year4, y=ice_duration, colour=year4)) +
+  geom_point(size=2, alpha=0.5, color="springgreen4") + scale_colour_gradientn(colours=rainbow(4)) +
+  theme_classic(14) +
+  ylab("Ice Duration (days)") + xlab("Year") +
+  stat_smooth(method="lm", se=FALSE, color="slateblue4", size=1)  # linear model 
+ice.plot + geom_line(data=mov.avg, aes(x=year4, y=mov_avg), size=1) # adds 3-yr moving avg
 
 
 
